@@ -1,0 +1,353 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Updated Font */
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: #fefeff; /* Light gray background */
+    color: #343a40; /* Dark gray text */
+}
+
+a {
+    text-decoration: none;
+    color: #007bff; /* Primary blue color for links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Header and Navigation */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(112, 4, 24, 0.81); /* Dark gray logo text */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #495057; /* Slightly lighter gray for nav links */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Primary blue on hover */
+}
+
+/* Hero Section */
+#hero {
+    background-color:rgb(247, 241, 248); /* Very light gray background */
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #343a40;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: #010f1a; /* Medium gray for hero paragraph */
+}
+
+/* Section Styles (Applied to About, Experience, Projects, Skills) */
+section {
+    padding: 3rem 0;
+}
+
+section:nth-child(even) {
+    background-color: #fff; /* Alternate white and light gray */
+}
+
+section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #343a40;
+    position: relative;
+    padding-bottom: 0.5rem;
+    display: inline-block; /* To allow underline effect */
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 50px;
+    background-color: #007bff; /* Blue underline */
+}
+
+/* About Section */
+#about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: left;
+}
+
+.education h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #343a40;
+}
+
+.education p {
+    font-size: 1rem;
+    color: #495057;
+    margin-bottom: 1rem;
+}
+
+/* Experience Section */
+#experience {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: left;
+}
+
+.experience-item {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa; /* Light gray background for each experience item */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.experience-item h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #343a40;
+}
+
+.experience-item p {
+    font-size: 1rem;
+    color: #495057;
+    margin-bottom: 1rem;
+}
+
+.experience-item ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.experience-item li {
+    font-size: 1rem;
+    color: #495057;
+    margin-bottom: 0.5rem;
+}
+
+/* Projects Section */
+#projects {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: left;
+}
+
+.project {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa; /* Light gray background for each project */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.project h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #343a40;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #495057;
+    margin-bottom: 1rem;
+}
+
+/* Skills Section */
+#skills {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: left;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.skill {
+    font-size: 1rem;
+    color: #495057;
+    padding: 0.75rem 1rem;
+    background-color: #e9ecef; /* Lighter gray for skill badges */
+    border-radius: 5px;
+}
+
+#contact {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    
+   
+    text-align: center;
+}
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.form-field {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.form-field label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.form-field input, .form-field textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+.form-field input:focus, .form-field textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.submit-btn:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 768px) {
+    #contact {
+        width: 90%;
+        padding: 15px;
+    }
+    .submit-btn {
+        font-size: 16px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #343a40; /* Dark gray footer */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 0.5rem;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
+.profile-pic {
+    width: 200px; /* Set the width */
+    height: 220px; /* Set the height to the same value as width for a circle */
+    border-radius: 50%; /* Make it circular */
+    margin-right: 15px; /* Space between image and text */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border: 3px solid #18191a; /* Optional: Add a border for a polished look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for depth */
+    vertical-align: middle; /* Aligns the image with the text */
+}
+#download {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding: 3rem 0; /* Add padding for spacing */
+}
+
+.download-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff; /* Primary blue color */
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    font-size: 1rem; /* Font size */
+    margin-top: 1rem; /* Space between heading and button */
+}
+
+.download-button:hover {
+    background-color: black; /* Darker blue on hover */
+    color:white;
+    transition: 0.2s ease-in;
+    
+}
+
